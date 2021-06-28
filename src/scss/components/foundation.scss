@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$dark: #161615;
+$primary: #45bac4;
+
+html,
+body {
+  // background: cyan;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.col {
+  background: grey;
+}

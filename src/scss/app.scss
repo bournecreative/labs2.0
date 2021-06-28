@@ -1,4 +1,4 @@
 @import "./vendors/gridlex.scss";
-body {
-  background: cyan;
-}
+@import "./components/foundation.scss";
+@import "./components//navigation.scss";
+@import "./components/button.scss";
