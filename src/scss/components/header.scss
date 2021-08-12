@@ -1,5 +1,11 @@
 header {
+  opacity: 1;
+  position: fixed;
   width: 100%;
+  transition: 450ms ease-in;
+  &.slide-out {
+    transform: translateY(-100px);
+  }
   .header__button-menu {
     background: transparent;
     padding: 0;
