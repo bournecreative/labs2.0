@@ -4,8 +4,8 @@ const Nav = {
         if (!this.nav) {
             return
         }
-        this.navOpen = document.querySelector('.button__nav-open');
-        this.navClose = document.querySelector('.button__nav-close');
+        this.navOpen = document.querySelector('.header__button-menu');
+        this.navClose = document.querySelector('.nav__button-close');
         this.registerEventListeners();
     },
     registerEventListeners() {

@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav__bar">
-            <button class="button button__nav-open">
-                <svg class="svg__hamburger" fill="#3c3d3d" viewBox="0 0 50 40" xmlns="http://www.w3.org/2000/svg">
+    <header>
+        <div class="header--top-bar">
+            <button class="button header__button-menu">
+                <svg class="svg__hamburger" fill="#161615" viewBox="0 0 50 40" xmlns="http://www.w3.org/2000/svg">
                     <g class="anim">
                         <path class="top" d="M0 8h50v3H0z" />
                         <path class="bottom" d="M0 28h50v3H0z" />
@@ -21,8 +21,12 @@
                     </g>
                 </svg>
             </button>
+            <span class="header--wrapper"><a class="header--link" href="./index.html">
+                    <img class="header--image" src="./src/resources/images/christian-john-labs-logo.png"
+                        alt="christian john labs brand icon" />
+                </a></span>
         </div>
-    </nav>
+    </header>
     <section>
         <div class="container">
             <div class="grid-1">
@@ -32,9 +36,9 @@
         </div>
     </section>
     <!-- navigation -->
-    <section>
+    <nav>
         <div class="nav__container">
-            <button class="button button__nav-close">
+            <button class="button nav__button-close">
                 <svg class="svg__close" fill="#ffffff" viewBox="0 0 50 40" xmlns="http://www.w3.org/2000/svg">
                     <g class="anim">
                         <path class="top" d="M0 8h50v3H0z" />
@@ -51,7 +55,7 @@
                 </div>
             </div> -->
         </div>
-    </section>
+    </nav>
     <script src="dist/js/app.js"></script>
 </body>
 

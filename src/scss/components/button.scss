@@ -1,20 +1,4 @@
 .button {
   border: none;
   cursor: pointer;
-  &.button__nav-open {
-    background: transparent;
-    position: absolute;
-    right: 0px;
-    .svg__hamburger {
-      width: 44px;
-    }
-  }
-  &.button__nav-close {
-    background: transparent;
-    position: absolute;
-    top: 0;
-    .svg__close {
-      width: 44px;
-    }
-  }
 }

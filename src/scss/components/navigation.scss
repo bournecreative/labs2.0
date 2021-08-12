@@ -1,31 +1,34 @@
 nav {
-  background: $primary;
-  height: 60px;
-  padding: 16px 0;
-  width: 100%;
-}
+  .nav__button-close {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    .svg__close {
+      width: 44px;
+    }
+  }
 
-.nav__container {
-  background: $dark;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform: translateY(-100vh);
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  // transition: navShow 0.8s cubic-bezier(0.65, 0, 0.35, 1);
-  // transition-duration: 150ms;
-  // animation: navShow 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-  width: 100%;
+  .nav__container {
+    background: $dark;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100vh);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition: navShow 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+    // transition-duration: 150ms;
+    // animation: navShow 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    width: 100%;
 
-  &.active {
-    transform: translateY(0);
+    &.active {
+      transform: translateY(0);
+    }
   }
 }
-
 // navShow {
 //   animation-name: navShow;
 //   animation-duration: 0.8s;
