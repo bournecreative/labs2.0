@@ -21,7 +21,7 @@ const HeaderScroll = {
         } else {
             this.header.classList.remove("slide-out")
         }
-        lastScrollPosition = current <= 0 ? 0 : current;
+        lastScrollPosition = current <= 0 ? 0 : current; // set last scroll position. If less then 0, set to 0 or set to current scroll position.
     }
 }
 
