@@ -19,11 +19,13 @@
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "browser-sync-webpack-plugin": "^2.3.0",
-    "laravel-mix": "^6.0.18",
-    "postcss": "^8.2.13",
+    "laravel-mix": "^6.0.27",
+    "postcss": "^8.3.6",
     "resolve-url-loader": "^3.1.2",
     "sass": "^1.32.11",
     "sass-loader": "^11.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash.debounce": "^4.0.8"
+  }
 }

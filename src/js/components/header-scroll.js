@@ -1,4 +1,6 @@
-let lastScrollPosition = 0 || document.documentElement.scrollTop;
+import { debounce } from "lodash";
+
+let lastScrollPosition = 0 || document.documentElement.scrollTop || window.pageYOffset;
 
 const HeaderScroll = {
     init() {
@@ -9,26 +11,18 @@ const HeaderScroll = {
         this.header = document.querySelector('header');
         this.registerEventListeners()
     },
-    getPosition() {
-        const lastScrollPosition = 0 || window.pageYOffset
-        console.log(lastScrollPosition)
-        return lastScrollPosition
-    },
     registerEventListeners() {
-        window.addEventListener("scroll", this.checkPosition.bind(this), false)
+        window.addEventListener("scroll", debounce(this.checkPosition.bind(this), 50))
     },
     checkPosition() {
         const current = window.pageYOffset || document.documentElement.scrollTop;
         if (current > lastScrollPosition) {
-            console.log("scrolling down")
             this.header.classList.add("slide-out")
         } else {
-            console.log("scrolling up")
             this.header.classList.remove("slide-out")
-
         }
         lastScrollPosition = current <= 0 ? 0 : current;
-    },
+    }
 }
 
 export default HeaderScroll;
