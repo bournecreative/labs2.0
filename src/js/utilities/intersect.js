@@ -15,4 +15,4 @@ const Intersect = {
     }, this.options)
 }
 
-export default LazyLoad;
+export default Intersect;

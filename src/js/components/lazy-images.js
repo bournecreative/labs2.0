@@ -14,3 +14,5 @@ const LazyLoad = {
         })
     }
 }
+
+export default LazyLoad;
